@@ -1,4 +1,4 @@
-import { createStore } from "vuex";
+import { createStore, createLogger } from "vuex";
 import counter from "./counter";
 
-export default createStore({ modules: { counter } });
+export default createStore({ plugins: [createLogger()], modules: { counter } });
