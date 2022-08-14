@@ -1,6 +1,5 @@
-import { createStore } from "vuex";
-
-export default createStore({
+export default {
+  namespaced: true,
   state() {
     return {
       counter: 0,
@@ -32,4 +31,4 @@ export default createStore({
       }, 1000);
     },
   },
-});
+};

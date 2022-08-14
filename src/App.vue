@@ -16,11 +16,11 @@ import TheNavbar from "./TheNavbar";
 export default {
   components: { TheNavbar },
   computed: {
-    ...mapGetters(["counter", "doubleCounter"]),
+    ...mapGetters("counter", ["counter", "doubleCounter"]),
   },
   methods: {
-    ...mapMutations({ add: "increment" }),
-    ...mapActions(["incAsync"]),
+    ...mapMutations({ add: "counter/increment" }),
+    ...mapActions("counter", ["incAsync"]),
   },
 };
 </script>

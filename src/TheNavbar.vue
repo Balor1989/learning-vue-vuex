@@ -13,10 +13,10 @@ export default {
     // counter() {
     //   return this.$store.getters.counter;
     // },
-    ...mapGetters(["counter"]),
+    ...mapGetters("counter", ["counter"]),
   },
   methods: {
-    ...mapMutations(["add"]),
+    ...mapMutations("counter", ["add"]),
     addFive() {
       this.add(5);
       // this.$store.commit("add", 5);
